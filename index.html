@@ -4,48 +4,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home | Textbooks for Tomorrow</title>
-  <meta name="description" content="Textbooks for Tomorrow is a student-run 501(c)(3) nonprofit in Frisco, Texas donating books to underprivileged students.">
+  <meta name="description" content="Textbooks for Tomorrow is a student-run 501(c)(3) nonprofit donating books to underprivileged students, with chapters in Texas and Illinois.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
 </head>
 <body data-page="home">
 
-  <!-- HERO: crossfading photos under a blue gradient, waves at the bottom -->
+  <!-- HERO: one static photo of the team under a blue gradient, books moving along the bottom -->
   <section class="hero">
     <div class="slides" aria-hidden="true">
-      <img src="media/img/team-group.jpg" alt="">
-      <img src="media/img/carrying-tables.jpg" alt="">
-      <img src="media/img/classroom.jpg" alt="">
-      <img src="media/img/volleyball.jpg" alt="">
+      <img class="static" src="media/img/team-group.jpg" alt="" style="object-position:50% 45%">
     </div>
     <div class="hero-inner">
       <h1 class="reveal">Textbooks for Tomorrow</h1>
       <h2 class="reveal">Donating books to underprivileged students, one drive at a time</h2>
-      <p class="sub reveal">Student-run 501(c)(3) nonprofit · Frisco, Texas</p>
+      <p class="sub reveal">Student-run 501(c)(3) nonprofit · Chapters in Texas and Illinois</p>
       <div class="hero-btns reveal">
         <a class="btn btn-white" href="mission.html">About Us</a>
         <a class="btn btn-white" href="outreach.html">Our Outreach</a>
-        <a class="btn btn-brand" data-link="donate">Donate Now</a>
+        <a class="btn btn-brand" href="donate.html">Give Now</a>
       </div>
     </div>
-    <div class="waves bottom"></div>
+    <div class="shelf bottom"></div>
   </section>
 
   <!-- THREE CARDS -->
   <div class="container cards stagger">
     <a class="card" href="outreach.html">
-      <img src="media/img/loading-books.jpg" alt="Volunteer loading donated books into a car trunk">
+      <img src="media/img/loading-books.jpg" alt="Volunteer loading donated books into a car trunk" style="object-position:72% 40%">
       <div class="body">
         <h2>Book Drives 📚</h2>
-        <p>Our volunteers go door to door collecting textbooks, review books, and fiction for students who need them. Our last drive brought in 1,836 books.</p>
+        <p>Our volunteers go door to door collecting textbooks, review books, and fiction for students who need them. We've collected more than 12,000 books so far.</p>
         <span class="more">Learn More <span>→</span></span>
       </div>
     </a>
     <a class="card" data-link="bookList">
-      <img src="media/img/volunteer-table.jpg" alt="Volunteers at a book drive table">
+      <img src="media/img/volunteer-table.jpg" alt="Volunteers at a book drive table" style="object-position:50% 35%">
       <div class="body">
         <h2>Our Book List</h2>
         <p>Browse every title we have available, from AP review guides and SAT prep to elementary readers and adult fiction.</p>
@@ -53,9 +50,9 @@
       </div>
     </a>
     <a class="card" href="donate.html">
-      <img src="media/img/box-to-car.jpg" alt="Volunteer carrying a box of books to a car">
+      <img src="media/img/volunteers-pair.jpg" alt="Two volunteers holding donated books" style="object-position:50% 40%">
       <div class="body">
-        <h2>Donate</h2>
+        <h2>Give Now</h2>
         <p>We're student-run and rely on our community. Donate your gently used books, or give directly to help cover shipping.</p>
         <span class="more">Learn More <span>→</span></span>
       </div>
@@ -64,18 +61,16 @@
 
   <hr class="rule">
 
-  <!-- WE ARE T4T (video + text) -->
+  <!-- WE ARE T4T -->
   <section class="section">
     <div class="container split">
       <div class="reveal left">
-        <div class="media-frame">
-          <video src="media/video/reel-drive-recap.mp4" poster="media/video/poster-recap.jpg" preload="none" playsinline></video>
-        </div>
+        <div class="media-frame"><img src="media/img/volunteer-table.jpg" alt="Textbooks for Tomorrow volunteers at a book drive" style="object-position:50% 40%"></div>
       </div>
       <div class="prose reveal right">
         <h2 class="h-xl">We are Textbooks for Tomorrow</h2>
         <p>We create supportive, inspiring spaces where curious young minds can learn and grow with us, 100% free. We want to build confident, creative thinkers and give students from every background an education that matters for their future.</p>
-        <p>We're a high school learning resource focused on distributing textbooks and sharing proven study guides. Our book drives, tournaments, and tutoring help students walk away with the knowledge, skills, and confidence to make their mark.</p>
+        <p>We started in Frisco, Texas and now have chapters in Texas and Illinois. More than 1,100 high school volunteers have helped us collect over 12,000 books for students in 7 countries.</p>
         <div class="btn-row">
           <a class="btn btn-brand" href="mission.html">Our Mission</a>
           <a class="btn btn-navy" href="team.html">Meet the Team</a>
@@ -84,17 +79,17 @@
     </div>
   </section>
 
-  <hr class="rule">
+  <!-- ALUMNI (same pattern as reviveinvestments.org) -->
+  <div class="alumni"></div>
 
   <!-- FEATURED DRIVE -->
   <section class="section">
     <div class="container split flip">
       <div class="reveal right">
         <div class="media-frame tall fader">
-          <img src="media/img/loading-truck.jpg" alt="Volunteers loading boxes of books into a truck">
+          <img src="media/img/loading-truck.jpg" alt="Volunteers loading boxes of books into a truck" style="object-position:55% 40%">
           <img src="media/img/carrying-tables.jpg" alt="Volunteers carrying tables and a cooler">
           <img src="media/img/volunteers-four.jpg" alt="Four volunteers smiling at the drive">
-          <img src="media/img/juice-table.jpg" alt="Volunteers pouring drinks at the snack table">
         </div>
       </div>
       <div class="prose reveal left">
@@ -110,28 +105,46 @@
     </div>
   </section>
 
-  <!-- AT A GLANCE (tinted band, like Avbotz "Team Overview") -->
+  <!-- AT A GLANCE -->
   <section class="band">
-    <div class="waves top"></div>
+    <div class="shelf top"></div>
     <div class="container">
       <h2 class="h-xl reveal">At a Glance</h2>
-      <p class="reveal" style="color:#374151">Numbers from our Richwoods book drive and events.</p>
-      <div class="stats stagger">
+      <div class="stats six stagger">
         <div class="stat">
           <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
-          <div class="num" data-count="1836">0</div><div class="label">Books Donated</div>
+          <div class="num" data-count="130" data-prefix="$" data-suffix="k+">$0</div><div class="label">Worth of Books Collected</div>
         </div>
         <div class="stat">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 11 9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
-          <div class="num" data-count="1600">0</div><div class="label">Houses Reached</div>
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h4v16H4zM10 4h4v16h-4z"/><path d="m16 5 3.5-1 3 15.5-3.5 1z"/></svg>
+          <div class="num" data-count="12000" data-suffix="+">0</div><div class="label">Books Collected</div>
         </div>
         <div class="stat">
           <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 6 5.5"/></svg>
-          <div class="num" data-count="120" data-suffix="+">0</div><div class="label">Volunteers</div>
+          <div class="num" data-count="1100" data-suffix="+">0</div><div class="label">Volunteers Engaged</div>
         </div>
         <div class="stat">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
-          <div class="num" data-count="4">0</div><div class="label">Charity Tournaments</div>
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          <div class="num" data-count="7">0</div><div class="label">Countries Reached</div>
+        </div>
+        <div class="stat">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <div class="num" data-count="2">0</div><div class="label">Chapters Nationwide (TX, IL)</div>
+        </div>
+        <div class="stat">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <div class="num" data-count="2" data-prefix="$" data-suffix="k">$0</div><div class="label">Fundraised</div>
+        </div>
+      </div>
+
+      <div class="panel reveal">
+        <h3 class="h-lg">Organizations We've Worked With</h3>
+        <div class="partners">
+          <div class="partner"><h4>Dallas Book Donations</h4><p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/></svg>Dallas, TX</p></div>
+          <div class="partner"><h4>Toys4Texans</h4><p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/></svg>Texas</p></div>
+          <div class="partner"><h4>Global Education Vision</h4><p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/></svg>Cambodia and Ukraine</p></div>
+          <div class="partner"><h4>Inside Books Project</h4><p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/></svg>Austin, TX</p></div>
+          <div class="partner"><h4>Books to Prisoners Vancouver</h4><p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/></svg>Federal and provincial prisons in British Columbia, Canada</p></div>
         </div>
       </div>
 
@@ -154,46 +167,47 @@
   <section class="section">
     <div class="container">
       <h2 class="h-xl reveal">What We Do</h2>
-      <div class="split">
-        <div class="reveal left">
-          <div class="media-frame fader">
-            <img src="media/img/basketball-game.jpg" alt="Basketball game at a charity event">
-            <img src="media/img/volleyball.jpg" alt="Volleyball game at a charity event">
-          </div>
+      <div class="cards four stagger">
+        <div class="card">
+          <img src="media/img/loading-truck.jpg" alt="Volunteers loading boxes of donated books" style="object-position:60% 40%">
+          <div class="body"><h3>Book Drives</h3><p>Door-to-door drives where teams of volunteers collect textbooks, review books, and fiction, then sort and ship them to students who need them.</p></div>
         </div>
-        <div class="prose reveal right">
-          <h3 class="h-lg">Charity Tournaments</h3>
-          <p>We host volleyball, basketball, and pickleball tournaments around Frisco and Plano. Entry fees go straight to buying and shipping books, and winning teams take home cash prizes.</p>
-          <div class="btn-row"><a class="btn btn-brand" href="outreach.html">Upcoming Events →</a></div>
+        <div class="card">
+          <img src="media/img/basketball-game.jpg" alt="Basketball game at a charity tournament" style="object-position:45% 50%">
+          <div class="body"><h3>Fundraising Events</h3><p>Sports events and charity tournaments in volleyball, basketball, and pickleball. Entry fees go straight to buying and shipping books.</p></div>
+        </div>
+        <div class="card">
+          <img src="media/img/volunteers-four.jpg" alt="Volunteers at a book drive" style="object-position:50% 30%">
+          <div class="body"><h3>Community Engagement</h3><p>High schoolers working as a team, earning service hours, and leading drives in their own neighborhoods.</p></div>
+        </div>
+        <div class="card">
+          <img src="media/img/classroom.jpg" alt="Students in a classroom" style="object-position:40% 40%">
+          <!-- TODO: add the name of the bill once it's ready to share -->
+          <div class="body"><h3>Political &amp; Educational Involvement</h3><p>Pushing for access to education beyond our drives, including work on a bill to support students and schools.</p></div>
         </div>
       </div>
-      <ul class="events stagger" style="margin-top:46px">
-        <li><h3>Reusing Textbooks</h3><p>We collect gently used textbooks and review books, sort them, and get them to students who can't afford them, both locally and around the world.</p></li>
-        <li><h3>Free Curriculum</h3><p>We share proven study guides and learning resources so any student can prepare for class, AP exams, and standardized tests.</p></li>
-        <li><h3>Kids Tutoring Kids</h3><p>Student volunteers tutor younger students. Teaching others helps both of them learn, and volunteers earn service hours.</p></li>
-      </ul>
     </div>
   </section>
 
-  <!-- CLOSING (full-bleed photos, like Avbotz "Sponsors") -->
+  <!-- CLOSING -->
   <section class="closing">
     <div class="slides" aria-hidden="true">
-      <img src="media/img/members-indoor.jpg" alt="">
       <img src="media/img/loading-truck.jpg" alt="">
-      <img src="media/img/team-group.jpg" alt="">
+      <img src="media/img/carrying-tables.jpg" alt="">
+      <img src="media/img/volunteer-table.jpg" alt="">
     </div>
-    <div class="waves top"></div>
+    <div class="shelf top"></div>
     <div class="container">
-      <h2 class="reveal">Donate</h2>
+      <h2 class="reveal">Give Now</h2>
       <p class="reveal">We're a student-run nonprofit, and every book and dollar goes to students who need it. Thank you to everyone who supports Textbooks for Tomorrow!</p>
       <div class="btn-stack reveal">
-        <a class="btn btn-white" href="donate.html">Donate Books</a>
-        <a class="btn btn-brand" data-link="donate">Donate Money</a>
+        <a class="btn btn-white" href="donate.html">Ways to Give</a>
+        <a class="btn btn-brand" data-link="donate">Donate on GoFundMe</a>
         <a class="btn btn-navy" href="contact.html">Contact Us</a>
       </div>
     </div>
   </section>
 
-  <script src="js/main.js?v=3"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

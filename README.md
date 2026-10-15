@@ -2,7 +2,7 @@
 
 Static website for **Textbooks for Tomorrow**, a student-run 501(c)(3) nonprofit in Frisco, Texas that donates books to underprivileged students.
 
-The layout follows [avbotz.com](https://www.avbotz.com): a fixed see-through header, a full-screen hero with a crossfading photo slideshow under a blue gradient, animated waves, photo cards, a video with a play button, a tinted stats band, framed photo carousels, a full-bleed closing section, and a dark footer.
+The layout follows [avbotz.com](https://www.avbotz.com): a fixed see-through header, a full-screen hero photo under a blue gradient, a line of books that drops in and moves along each section edge, photo cards, a video with a play button, a tinted stats band, framed photo carousels, a full-bleed closing section, and a dark footer.
 
 ## Pages
 
@@ -12,7 +12,7 @@ The layout follows [avbotz.com](https://www.avbotz.com): a fixed see-through hea
 | `mission.html` | Our Mission |
 | `team.html` | Our Team |
 | `outreach.html` | Outreach (reels, Richwoods drive, tournaments, events) |
-| `donate.html` | Donate |
+| `donate.html` | Give Now (opened from the Give Now button) |
 | `contact.html` | Contact |
 
 The header and footer for every page come from `js/main.js`, so nav links, the footer, and shared URLs (GoFundMe, book list, Instagram, drive sign-up, email) are edited in one place.
@@ -29,7 +29,8 @@ To swap a photo, drop a new file into `media/img/` and update the `src` in the p
 ## Scroll effects
 
 - Hero and closing backgrounds crossfade between photos with a slow zoom
-- Three layers of animated waves at the edge of each photo section
+- Books drop in and then move along in a line at the edge of each photo section (built in `js/main.js`, no image files needed)
+- "Where our alumni go" logo strip scrolls in a loop (same pattern as reviveinvestments.org); logos are in `media/logos/` from Wikimedia Commons
 - Sections fade and slide in as you scroll
 - Stat numbers count up when they come into view
 - Header turns more solid after you scroll
@@ -37,8 +38,9 @@ To swap a photo, drop a new file into `media/img/` and update the `src` in the p
 
 ## Editing
 
-- **Stats:** change the `data-count` values in `index.html`. Right now they're from the fall 2025 Richwoods drive (1,836 books, 1,600 houses, 120+ volunteers) and the 4 charity tournaments.
-- **Officers:** edit the `.member` blocks in `team.html`. To use a photo, replace the initials in `.avatar` with `<img src="media/img/name.jpg" alt="Name">`.
+- **Stats:** change the `data-count` values in `index.html` ("At a Glance").
+- **Alumni schools:** edit the `ALUMNI` list in `js/main.js` and add the logo to `media/logos/`.
+- **Officers:** photos live in `media/team/` (square). Irene's card shows an initial until you add `media/team/irene.jpg` and swap it in (see the comment in `team.html`).
 - **Events:** edit the list in `outreach.html`.
 - After changing `css/style.css` or `js/main.js`, bump the `?v=` number on their links in each page so browsers load the new version.
 

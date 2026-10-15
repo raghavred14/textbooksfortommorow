@@ -14,7 +14,6 @@
     ["mission", "mission.html", "Our Mission"],
     ["team", "team.html", "Our Team"],
     ["outreach", "outreach.html", "Outreach"],
-    ["donate", "donate.html", "Donate"],
     ["contact", "contact.html", "Contact"],
   ];
 
@@ -36,7 +35,7 @@
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
       <ul class="nav-links">
         ${NAV.map(([id, href, label]) => `<li><a href="${href}" class="${id === page ? "active" : ""}">${label}</a></li>`).join("")}
-        <li><a class="cta-link" href="${LINKS.donate}" target="_blank" rel="noopener">Give Now</a></li>
+        <li><a class="cta-link${page === "donate" ? " active" : ""}" href="donate.html">Give Now</a></li>
       </ul>
     </div>`;
   document.body.prepend(header);
@@ -69,7 +68,7 @@
       <div>
         <h4>Get Involved</h4>
         <ul>
-          <li><a href="donate.html">Donate Books</a></li>
+          <li><a href="donate.html">Give Now</a></li>
           <li><a href="${LINKS.donate}" target="_blank" rel="noopener">Donate Money</a></li>
           <li><a href="${LINKS.bookList}" target="_blank" rel="noopener">Book List</a></li>
         </ul>
@@ -99,32 +98,57 @@
 
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // ----- Animated waves: <div class="waves bottom"></div> -----
-  function wavePath(amp, len, phase) {
-    // one tile of a smooth wave, 1200 wide x 100 tall, filled to the bottom
-    let d = `M0 ${50 + amp * Math.sin(phase)}`;
-    for (let x = 0; x <= 1200; x += 20) {
-      const y = 50 + amp * Math.sin((x / len) * Math.PI * 2 + phase);
-      d += ` L${x} ${y.toFixed(1)}`;
+  // ----- Books that drop in, then move along in a line: <div class="shelf bottom|top"></div> -----
+  const BOOK_COLORS = ["#4353e6", "#6e7cff", "#1b2a6b", "#f2b134", "#e86a50", "#4fa3a5", "#8bb4e8", "#c9cffc", "#ffffff"];
+  let seed = 7;
+  const rand = () => ((seed = (seed * 9301 + 49297) % 233280) / 233280);
+  function bookRun(count) {
+    let html = "";
+    for (let k = 0; k < count; k++) {
+      const c = BOOK_COLORS[Math.floor(rand() * BOOK_COLORS.length)];
+      const delay = `${(Math.min(k, 40) * 0.05).toFixed(2)}s`;
+      if (rand() < 0.1) {
+        // a small pile of books lying flat
+        const n = 2 + Math.floor(rand() * 3);
+        let stack = "";
+        for (let s = 0; s < n; s++) {
+          stack += `<span style="width:${34 + Math.floor(rand() * 16)}px;--c:${BOOK_COLORS[Math.floor(rand() * BOOK_COLORS.length)]}"></span>`;
+        }
+        html += `<div class="book-stack" style="--d:${delay}">${stack}</div>`;
+      } else {
+        const w = 11 + Math.floor(rand() * 11);
+        const h = 34 + Math.floor(rand() * 30);
+        const tilt = rand() < 0.12 ? (rand() < 0.5 ? -8 : 8) : 0;
+        html += `<div class="book" style="width:${w}px;height:${h}px;--c:${c};--r:${tilt}deg;--d:${delay}"></div>`;
+      }
     }
-    return d + " L1200 100 L0 100 Z";
+    return html;
   }
-  const layers = [
-    ["w1", 22, 600, 0],
-    ["w2", 16, 400, 1.3],
-    ["w3", 10, 300, 2.1],
+  document.querySelectorAll(".shelf").forEach((el) => {
+    const run = bookRun(70);
+    el.setAttribute("aria-hidden", "true");
+    el.innerHTML = `<div class="shelf-track">${run}${run}</div>`;
+  });
+
+  // ----- Alumni logo strip: <div class="alumni"></div> -----
+  const ALUMNI = [
+    ["caltech.svg", "Caltech"],
+    ["uc-berkeley.svg", "UC Berkeley"],
+    ["ut-austin.svg", "UT Austin"],
+    ["northwestern.svg", "Northwestern"],
+    ["uiuc.svg", "UIUC"],
   ];
-  document.querySelectorAll(".waves").forEach((el) => {
-    el.innerHTML = layers.map(([cls, amp, len, ph]) => {
-      const p = wavePath(amp, len, ph);
-      return `<svg class="${cls}" viewBox="0 0 2400 100" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="${p}"/><path fill="currentColor" transform="translate(1200 0)" d="${p}"/></svg>`;
-    }).join("");
+  document.querySelectorAll(".alumni").forEach((el) => {
+    const logos = ALUMNI.map(([f, name]) => `<img src="media/logos/${f}" alt="${name}" title="${name}">`).join("");
+    el.innerHTML = `
+      <div class="container"><p class="pill">Where our alumni go</p></div>
+      <div class="marquee">${logos.repeat(4)}</div>`;
   });
 
   // ----- Crossfading slideshows: .slides (hero/closing backgrounds) and .fader (framed carousels) -----
   function slideshow(container, interval) {
     const imgs = [...container.querySelectorAll("img")];
-    if (!imgs.length) return;
+    if (!imgs.length || container.querySelector("img.static")) return;
     let i = 0;
     imgs[0].classList.add("on");
     let dots = [];
