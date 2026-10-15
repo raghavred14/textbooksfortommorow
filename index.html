@@ -3,177 +3,197 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Textbooks for Tomorrow</title>
-  <meta name="description" content="A 501(c)(3) nonprofit helping underprivileged students reach their full potential by reusing textbooks, offering free curriculum, and kids tutoring kids.">
+  <title>Home | Textbooks for Tomorrow</title>
+  <meta name="description" content="Textbooks for Tomorrow is a student-run 501(c)(3) nonprofit in Frisco, Texas donating books to underprivileged students.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
 </head>
 <body data-page="home">
 
-  <!-- HERO -->
+  <!-- HERO: crossfading photos under a blue gradient, waves at the bottom -->
   <section class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-content">
-      <span class="eyebrow reveal">501(c)(3) Nonprofit · Frisco, Texas</span>
-      <h1 class="reveal">Textbooks for <em>Tomorrow</em></h1>
-      <p class="tagline reveal">Learning begins with us.</p>
-      <p class="sub reveal">Reusing textbooks, offering free curriculum, and kids tutoring kids.</p>
-      <div class="hero-actions reveal">
-        <a class="btn btn-gold" data-link="donate">Donate Now</a>
-        <a class="btn btn-ghost" href="mission.html">Our Mission</a>
+    <div class="slides" aria-hidden="true">
+      <img src="media/img/team-group.jpg" alt="">
+      <img src="media/img/carrying-tables.jpg" alt="">
+      <img src="media/img/classroom.jpg" alt="">
+      <img src="media/img/volleyball.jpg" alt="">
+    </div>
+    <div class="hero-inner">
+      <h1 class="reveal">Textbooks for Tomorrow</h1>
+      <h2 class="reveal">Donating books to underprivileged students, one drive at a time</h2>
+      <p class="sub reveal">Student-run 501(c)(3) nonprofit · Frisco, Texas</p>
+      <div class="hero-btns reveal">
+        <a class="btn btn-white" href="mission.html">About Us</a>
+        <a class="btn btn-white" href="outreach.html">Our Outreach</a>
+        <a class="btn btn-brand" data-link="donate">Donate Now</a>
       </div>
     </div>
-    <div class="scroll-cue" aria-hidden="true"></div>
+    <div class="waves bottom"></div>
   </section>
 
-  <!-- QUICK CARDS -->
-  <div class="quick">
-    <div class="container quick-grid stagger">
-      <a class="card" href="donate.html">
-        <div class="icon">📦</div>
-        <h2>Donate Books</h2>
-        <p>Give your gently used review books, textbooks, and fiction a second life with a student who needs them.</p>
-        <span class="more">Learn more</span>
-      </a>
-      <a class="card" data-link="bookList">
-        <div class="icon">📖</div>
+  <!-- THREE CARDS -->
+  <div class="container cards stagger">
+    <a class="card" href="outreach.html">
+      <img src="media/img/loading-books.jpg" alt="Volunteer loading donated books into a car trunk">
+      <div class="body">
+        <h2>Book Drives 📚</h2>
+        <p>Our volunteers go door to door collecting textbooks, review books, and fiction for students who need them. Our last drive brought in 1,836 books.</p>
+        <span class="more">Learn More <span>→</span></span>
+      </div>
+    </a>
+    <a class="card" data-link="bookList">
+      <img src="media/img/volunteer-table.jpg" alt="Volunteers at a book drive table">
+      <div class="body">
         <h2>Our Book List</h2>
-        <p>Browse every title we have available, from AP review guides to elementary readers.</p>
-        <span class="more">View the list</span>
-      </a>
-      <a class="card" href="team.html">
-        <div class="icon">🤝</div>
-        <h2>Meet the Team</h2>
-        <p>We're a team of student volunteers who believe every kid deserves the tools to succeed.</p>
-        <span class="more">Our team</span>
-      </a>
-    </div>
+        <p>Browse every title we have available, from AP review guides and SAT prep to elementary readers and adult fiction.</p>
+        <span class="more">View the List <span>→</span></span>
+      </div>
+    </a>
+    <a class="card" href="donate.html">
+      <img src="media/img/box-to-car.jpg" alt="Volunteer carrying a box of books to a car">
+      <div class="body">
+        <h2>Donate</h2>
+        <p>We're student-run and rely on our community. Donate your gently used books, or give directly to help cover shipping.</p>
+        <span class="more">Learn More <span>→</span></span>
+      </div>
+    </a>
   </div>
 
-  <!-- WHO WE ARE -->
-  <section>
+  <hr class="rule">
+
+  <!-- WE ARE T4T (video + text) -->
+  <section class="section">
     <div class="container split">
-      <div class="reveal from-left">
-        <p class="kicker">Who we are</p>
-        <h2 class="title">We are Textbooks for Tomorrow</h2>
-        <p>At Textbooks for Tomorrow, we create supportive and inspiring spaces where curious young minds can learn and grow with us, 100% free. Because we love learning, we aim for more than great grades: we want to build confident, creative thinkers and give them an education that matters for their future, so students from every background can make an impact on the world.</p>
-        <p>We're a high school learning resource focused on distributing textbooks and sharing proven study guides. Our students leave with the character and confidence to make their mark, plus the knowledge and real-world skills to get ahead in whatever field they choose.</p>
-        <div style="margin-top:28px"><a class="btn btn-navy" href="mission.html">Know more about us →</a></div>
+      <div class="reveal left">
+        <div class="media-frame">
+          <video src="media/video/reel-drive-recap.mp4" poster="media/video/poster-recap.jpg" preload="none" playsinline></video>
+        </div>
       </div>
-      <div class="reveal from-right">
-        <div class="art" aria-hidden="true">
-          <div class="shelf-base"></div>
-          <div class="shelf">
-            <div class="spine" style="height:150px;--c:#f2b134"></div>
-            <div class="spine" style="height:190px;--c:#e86a50"></div>
-            <div class="spine" style="height:130px;--c:#4fa3a5"></div>
-            <div class="spine" style="height:210px;--c:#ffd27a"></div>
-            <div class="spine" style="height:160px;--c:#8bb4e8"></div>
-            <div class="spine" style="height:180px;--c:#f2b134"></div>
-            <div class="spine" style="height:120px;--c:#e86a50"></div>
-          </div>
+      <div class="prose reveal right">
+        <h2 class="h-xl">We are Textbooks for Tomorrow</h2>
+        <p>We create supportive, inspiring spaces where curious young minds can learn and grow with us, 100% free. We want to build confident, creative thinkers and give students from every background an education that matters for their future.</p>
+        <p>We're a high school learning resource focused on distributing textbooks and sharing proven study guides. Our book drives, tournaments, and tutoring help students walk away with the knowledge, skills, and confidence to make their mark.</p>
+        <div class="btn-row">
+          <a class="btn btn-brand" href="mission.html">Our Mission</a>
+          <a class="btn btn-navy" href="team.html">Meet the Team</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- AT A GLANCE (stats) -->
-  <section class="section-dark">
-    <div class="container center">
-      <p class="kicker reveal">Our impact</p>
-      <h2 class="title reveal">Textbooks for Tomorrow at a Glance</h2>
-      <!-- EDIT STATS HERE: change each data-count value -->
-      <div class="stats stagger">
-        <div class="stat"><div class="num" data-count="5000" data-suffix="+">0</div><div class="label">Books Donated</div></div>
-        <div class="stat"><div class="num" data-count="10" data-suffix="+">0</div><div class="label">Countries Donated</div></div>
-        <div class="stat"><div class="num" data-count="50000" data-prefix="$" data-suffix="+">0</div><div class="label">Worth of Books Raised</div></div>
-        <div class="stat"><div class="num" data-count="100" data-suffix="+">0</div><div class="label">Active Student Volunteers</div></div>
+  <hr class="rule">
+
+  <!-- FEATURED DRIVE -->
+  <section class="section">
+    <div class="container split flip">
+      <div class="reveal right">
+        <div class="media-frame tall fader">
+          <img src="media/img/loading-truck.jpg" alt="Volunteers loading boxes of books into a truck">
+          <img src="media/img/carrying-tables.jpg" alt="Volunteers carrying tables and a cooler">
+          <img src="media/img/volunteers-four.jpg" alt="Four volunteers smiling at the drive">
+          <img src="media/img/juice-table.jpg" alt="Volunteers pouring drinks at the snack table">
+        </div>
+      </div>
+      <div class="prose reveal left">
+        <p class="kicker">Featured Drive</p>
+        <h2 class="h-xl">Richwoods Book Drive</h2>
+        <p>In fall 2025, about 120 volunteers fanned out across the Richwoods neighborhood in Frisco. Together we reached 1,600 houses and collected 1,836 books for students who need them.</p>
+        <p>Afterward, everyone stuck around for basketball, volleyball, and free food. Big thanks to our officers and to our local sponsors who made it possible.</p>
+        <div class="btn-stack">
+          <a class="btn btn-brand" href="outreach.html">See All Outreach</a>
+          <a class="btn btn-navy" data-link="instagram">Follow Us on Instagram</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- BOOK LIST OVERVIEW -->
-  <section class="section-alt">
+  <!-- AT A GLANCE (tinted band, like Avbotz "Team Overview") -->
+  <section class="band">
+    <div class="waves top"></div>
     <div class="container">
-      <div class="center">
-        <p class="kicker reveal">Book list overview</p>
-        <h2 class="title reveal">Books for every reader</h2>
-        <p class="lead reveal">Textbooks for Tomorrow gives every student an equal chance at rewarding, stimulating learning that prepares them for a full social and cultural life.</p>
+      <h2 class="h-xl reveal">At a Glance</h2>
+      <p class="reveal" style="color:#374151">Numbers from our Richwoods book drive and events.</p>
+      <div class="stats stagger">
+        <div class="stat">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
+          <div class="num" data-count="1836">0</div><div class="label">Books Donated</div>
+        </div>
+        <div class="stat">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 11 9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+          <div class="num" data-count="1600">0</div><div class="label">Houses Reached</div>
+        </div>
+        <div class="stat">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 6 5.5"/></svg>
+          <div class="num" data-count="120" data-suffix="+">0</div><div class="label">Volunteers</div>
+        </div>
+        <div class="stat">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
+          <div class="num" data-count="4">0</div><div class="label">Charity Tournaments</div>
+        </div>
       </div>
-      <div class="grid-3 stagger">
-        <div class="tile"><span class="badge">Grades 9–12</span><h3>High School</h3><p>Hands-on books in History, English, Math, Science, Skills, and Test Prep.</p></div>
-        <div class="tile"><span class="badge">Grades 6–9</span><h3>Middle School</h3><p>For driven kids exploring English, Math, Science, Test Prep, and History.</p></div>
-        <div class="tile"><span class="badge">Grades K–5</span><h3>Elementary School</h3><p>For rising stars who want to learn more English, Math, Science, Skills, and History.</p></div>
-        <div class="tile"><span class="badge">Adults</span><h3>Adult Fiction</h3><p>Stories that give wings to the imaginative adults of today's world.</p></div>
-        <div class="tile"><span class="badge">Adults</span><h3>Adult Non-Fiction</h3><p>Hundreds of unique non-fiction books to grow what adults know.</p></div>
-        <div class="tile"><span class="badge">All ages</span><h3>Skills Books</h3><p>Learn useful skills, from cooking to coding.</p></div>
-      </div>
-      <div class="center reveal" style="margin-top:44px">
-        <a class="btn btn-navy" data-link="bookList">Access our book list →</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- QUOTE -->
-  <section class="section-dark">
-    <div class="container quote reveal zoom">
-      <blockquote>Education is the passport to the future, for tomorrow belongs to those who prepare for it today.</blockquote>
-      <cite>— Malcolm X</cite>
+      <div class="panel reveal">
+        <h3 class="h-lg">Book List Overview</h3>
+        <div class="groups">
+          <div class="group"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>High School</h4><p>For grades 9–12: hands-on books in History, English, Math, Science, Skills, and Test Prep, including AP review books.</p></div>
+          <div class="group"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>Middle School</h4><p>For driven kids in grades 6–9 exploring English, Math, Science, Test Prep, and History.</p></div>
+          <div class="group"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>Elementary School</h4><p>For rising stars who want to learn more English, Math, Science, Skills, and History.</p></div>
+          <div class="group"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>Skills Books</h4><p>Useful skills of all kinds, from cooking to coding.</p></div>
+          <div class="group"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c2 3 6 4 6 9a6 6 0 0 1-12 0c0-5 4-6 6-9z"/></svg>Adult Fiction</h4><p>Stories that give wings to the imaginative adults of today's world.</p></div>
+          <div class="group"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>Adult Non-Fiction</h4><p>Hundreds of unique non-fiction books to grow what adults know.</p></div>
+        </div>
+        <div class="btn-row"><a class="btn btn-brand" data-link="bookList">Access Our Book List →</a></div>
+      </div>
     </div>
   </section>
 
   <!-- WHAT WE DO -->
-  <section>
+  <section class="section">
     <div class="container">
-      <div class="center">
-        <p class="kicker reveal">What we do</p>
-        <h2 class="title reveal">Three ways we help students</h2>
-      </div>
-      <div class="grid-3 stagger">
-        <div class="card"><div class="icon">♻️</div><h3>Reusing Textbooks</h3><p>We collect gently used textbooks and review books and get them to students who can't afford them, both locally and around the world.</p></div>
-        <div class="card"><div class="icon">🗂️</div><h3>Free Curriculum</h3><p>We share proven study guides and learning resources so any student can prepare for class, AP exams, and standardized tests.</p></div>
-        <div class="card"><div class="icon">🧑‍🏫</div><h3>Kids Tutoring Kids</h3><p>Student volunteers tutor younger students. Teaching others helps both of them learn.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DONATIONS -->
-  <section class="section-alt">
-    <div class="container split reverse">
-      <div class="reveal from-right">
-        <p class="kicker">Donations</p>
-        <h2 class="title">Give a book. Change a future.</h2>
-        <p><strong>Textbooks:</strong> We accept any kind of review textbook, including Princeton Review, Barron's, and official AP review books, plus fiction for our younger readers.</p>
-        <p><strong>Other books:</strong> We accept gently used adult fiction and school-age books to send to imaginative readers around the world.</p>
-        <p><strong>Money:</strong> Want to donate to us directly? Every dollar helps us get more books to more kids.</p>
-        <div class="hero-actions" style="justify-content:flex-start">
-          <a class="btn btn-gold" data-link="donate">Donate money</a>
-          <a class="btn btn-navy" href="donate.html">Donate books</a>
+      <h2 class="h-xl reveal">What We Do</h2>
+      <div class="split">
+        <div class="reveal left">
+          <div class="media-frame fader">
+            <img src="media/img/basketball-game.jpg" alt="Basketball game at a charity event">
+            <img src="media/img/volleyball.jpg" alt="Volleyball game at a charity event">
+          </div>
+        </div>
+        <div class="prose reveal right">
+          <h3 class="h-lg">Charity Tournaments</h3>
+          <p>We host volleyball, basketball, and pickleball tournaments around Frisco and Plano. Entry fees go straight to buying and shipping books, and winning teams take home cash prizes.</p>
+          <div class="btn-row"><a class="btn btn-brand" href="outreach.html">Upcoming Events →</a></div>
         </div>
       </div>
-      <div class="reveal from-left">
-        <div class="art gold" aria-hidden="true"><span class="emoji">🎁</span></div>
-      </div>
+      <ul class="events stagger" style="margin-top:46px">
+        <li><h3>Reusing Textbooks</h3><p>We collect gently used textbooks and review books, sort them, and get them to students who can't afford them, both locally and around the world.</p></li>
+        <li><h3>Free Curriculum</h3><p>We share proven study guides and learning resources so any student can prepare for class, AP exams, and standardized tests.</p></li>
+        <li><h3>Kids Tutoring Kids</h3><p>Student volunteers tutor younger students. Teaching others helps both of them learn, and volunteers earn service hours.</p></li>
+      </ul>
     </div>
   </section>
 
-  <!-- NEWSLETTER -->
-  <section>
+  <!-- CLOSING (full-bleed photos, like Avbotz "Sponsors") -->
+  <section class="closing">
+    <div class="slides" aria-hidden="true">
+      <img src="media/img/members-indoor.jpg" alt="">
+      <img src="media/img/loading-truck.jpg" alt="">
+      <img src="media/img/team-group.jpg" alt="">
+    </div>
+    <div class="waves top"></div>
     <div class="container">
-      <div class="cta reveal zoom">
-        <h2>Stay in the loop</h2>
-        <p>Want to hear about donations and updates? Subscribe now!</p>
-        <form class="subscribe" data-mailto="Newsletter signup">
-          <input type="email" name="email" placeholder="Your email address" required aria-label="Email">
-          <button class="btn btn-gold" type="submit">Subscribe</button>
-        </form>
+      <h2 class="reveal">Donate</h2>
+      <p class="reveal">We're a student-run nonprofit, and every book and dollar goes to students who need it. Thank you to everyone who supports Textbooks for Tomorrow!</p>
+      <div class="btn-stack reveal">
+        <a class="btn btn-white" href="donate.html">Donate Books</a>
+        <a class="btn btn-brand" data-link="donate">Donate Money</a>
+        <a class="btn btn-navy" href="contact.html">Contact Us</a>
       </div>
     </div>
   </section>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>

@@ -8,85 +8,95 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
 </head>
 <body data-page="team">
 
-  <section class="hero short">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-content">
-      <span class="eyebrow reveal">Our Team</span>
-      <h1 class="reveal">Students helping <em>students</em></h1>
-      <p class="tagline reveal">The volunteers who make Textbooks for Tomorrow happen.</p>
+  <section class="hero page">
+    <div class="slides" aria-hidden="true">
+      <img src="media/img/team-group.jpg" alt="">
+      <img src="media/img/volunteer-table.jpg" alt="">
+    </div>
+    <div class="hero-inner">
+      <h1 class="reveal">Our Team</h1>
+      <h2 class="reveal">Students helping students</h2>
+    </div>
+    <div class="waves bottom"></div>
+  </section>
+
+  <section class="section" style="padding-top:40px">
+    <div class="container split">
+      <div class="reveal left">
+        <div class="media-frame"><img src="media/img/team-group.jpg" alt="The Textbooks for Tomorrow team outdoors"></div>
+      </div>
+      <div class="prose reveal right">
+        <h2 class="h-xl">Who We Are</h2>
+        <p>Textbooks for Tomorrow is run entirely by high school students in Frisco, Texas. Our officers plan the drives, run the tournaments, and handle every box of books from pickup to delivery.</p>
+        <p>Behind them are more than 120 student volunteers who go door to door, sort books, and tutor younger kids.</p>
+      </div>
     </div>
   </section>
 
   <!-- LEADERSHIP
-       To edit: change the initials in .avatar (or replace with <img src="images/name.jpg" alt="Name">),
-       the name in <h3>, the role, and the short bio. Copy a .member block to add a person. -->
-  <section>
+       To edit: change the initials in .avatar (or replace them with <img src="media/img/name.jpg" alt="Name">),
+       the name, the role, and the short bio. Copy a .member block to add a person. -->
+  <section class="band">
+    <div class="waves top"></div>
     <div class="container">
-      <div class="center">
-        <p class="kicker reveal">Leadership</p>
-        <h2 class="title reveal">Meet the board</h2>
-        <p class="lead reveal">The student leaders who run our book drives, partnerships, and tutoring programs.</p>
-      </div>
+      <h2 class="h-xl reveal">Our Officers</h2>
+      <p class="reveal" style="color:#374151">The student leaders who run our book drives, partnerships, and events.</p>
       <div class="team-grid stagger">
-        <div class="member"><div class="avatar">FN</div><div class="info"><h3>Founder Name</h3><div class="role">Founder &amp; President</div><p>Started Textbooks for Tomorrow to get unused books into the hands of students who need them.</p></div></div>
-        <div class="member"><div class="avatar">VP</div><div class="info"><h3>Member Name</h3><div class="role">Vice President</div><p>Keeps our book drives, volunteers, and partner schools running smoothly.</p></div></div>
-        <div class="member"><div class="avatar">OP</div><div class="info"><h3>Member Name</h3><div class="role">Director of Operations</div><p>Handles collecting, sorting, and shipping donated books.</p></div></div>
-        <div class="member"><div class="avatar">OR</div><div class="info"><h3>Member Name</h3><div class="role">Outreach Lead</div><p>Builds partnerships with schools, libraries, and organizations around the world.</p></div></div>
-        <div class="member"><div class="avatar">TU</div><div class="info"><h3>Member Name</h3><div class="role">Tutoring Coordinator</div><p>Runs the kids-tutoring-kids program and pairs volunteers with students.</p></div></div>
-        <div class="member"><div class="avatar">MK</div><div class="info"><h3>Member Name</h3><div class="role">Marketing &amp; Social Media</div><p>Runs our Instagram and spreads the word about every book drive.</p></div></div>
+        <div class="member"><div class="avatar">FN</div><div class="info"><h3>Founder Name</h3><div class="role">Founder &amp; President</div><p>Started Textbooks for Tomorrow to get unused books to students who need them.</p></div></div>
+        <div class="member"><div class="avatar">VP</div><div class="info"><h3>Member Name</h3><div class="role">Vice President</div><p>Keeps our drives, volunteers, and partner schools running smoothly.</p></div></div>
+        <div class="member"><div class="avatar">OP</div><div class="info"><h3>Member Name</h3><div class="role">Operations</div><p>Handles collecting, sorting, and shipping donated books.</p></div></div>
+        <div class="member"><div class="avatar">EV</div><div class="info"><h3>Member Name</h3><div class="role">Events</div><p>Plans our volleyball, basketball, and pickleball tournaments.</p></div></div>
+        <div class="member"><div class="avatar">OR</div><div class="info"><h3>Member Name</h3><div class="role">Outreach</div><p>Builds partnerships with schools, libraries, and local sponsors.</p></div></div>
+        <div class="member"><div class="avatar">MK</div><div class="info"><h3>Member Name</h3><div class="role">Social Media</div><p>Runs our Instagram and spreads the word about every event.</p></div></div>
       </div>
-    </div>
-  </section>
 
-  <!-- TEAMS -->
-  <section class="section-alt">
-    <div class="container">
-      <div class="center">
-        <p class="kicker reveal">How we're organized</p>
-        <h2 class="title reveal">Our teams</h2>
-      </div>
-      <div class="grid-2 stagger">
-        <div class="tile"><span class="badge">📦 Operations</span><h3>Book Drives &amp; Logistics</h3><p>Collects, sorts, catalogs, and ships donated books, and keeps our public book list up to date.</p></div>
-        <div class="tile"><span class="badge">🧑‍🏫 Education</span><h3>Tutoring &amp; Curriculum</h3><p>Puts together free study guides and runs our peer tutoring sessions for elementary, middle, and high school students.</p></div>
-        <div class="tile"><span class="badge">🌍 Outreach</span><h3>Partnerships</h3><p>Finds schools, libraries, and nonprofits locally and abroad that need books, and builds lasting relationships with them.</p></div>
-        <div class="tile"><span class="badge">📣 Business</span><h3>Fundraising &amp; Media</h3><p>Runs fundraisers, social media, and our newsletter so the community knows how to help.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VOLUNTEER STATS -->
-  <section class="section-dark">
-    <div class="container center">
-      <p class="kicker reveal">Team overview</p>
-      <h2 class="title reveal">Powered by volunteers</h2>
-      <!-- EDIT STATS HERE -->
-      <div class="stats stagger">
-        <div class="stat"><div class="num" data-count="100" data-suffix="+">0</div><div class="label">Active Student Volunteers</div></div>
-        <div class="stat"><div class="num" data-count="5000" data-suffix="+">0</div><div class="label">Books Donated</div></div>
-        <div class="stat"><div class="num" data-count="10" data-suffix="+">0</div><div class="label">Countries Reached</div></div>
-        <div class="stat"><div class="num" data-count="100" data-suffix="%">0</div><div class="label">Free for Students</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="cta reveal zoom">
-        <h2>Join the team</h2>
-        <p>Are you a student who loves learning and wants to give back? We're always looking for volunteers, tutors, and leaders.</p>
-        <div class="hero-actions">
-          <a class="btn btn-gold" href="contact.html">Become a Volunteer</a>
-          <a class="btn btn-ghost" data-link="instagram">Follow on Instagram</a>
+      <div class="panel reveal">
+        <h3 class="h-lg">Our Teams</h3>
+        <div class="groups">
+          <div class="group"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg>Book Drives &amp; Logistics</h4><p>Collects, sorts, catalogs, and ships donated books, and keeps our public book list up to date.</p></div>
+          <div class="group"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>Tutoring &amp; Curriculum</h4><p>Puts together free study guides and runs peer tutoring for elementary, middle, and high school students.</p></div>
+          <div class="group"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/></svg>Events &amp; Fundraising</h4><p>Runs our charity tournaments and fundraisers, and works with local sponsors.</p></div>
+          <div class="group"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>Media &amp; Outreach</h4><p>Makes our reels and flyers, runs social media, and recruits new volunteers.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <script src="js/main.js"></script>
+  <section class="section">
+    <div class="container">
+      <h2 class="h-xl reveal">Our Volunteers</h2>
+      <div class="gallery stagger" style="margin-top:10px">
+        <figure class="wide"><img src="media/img/volunteer-table.jpg" alt="Volunteers at the drive"><figcaption>Richwoods drive volunteers</figcaption></figure>
+        <figure><img src="media/img/volunteers-four.jpg" alt="Four volunteers"><figcaption>Fall 2025 drive</figcaption></figure>
+        <figure><img src="media/img/volunteers-girls.jpg" alt="Volunteers sitting together"><figcaption>Fall 2025 drive</figcaption></figure>
+        <figure><img src="media/img/volunteers-pair.jpg" alt="Two volunteers holding books"><figcaption>Collecting books</figcaption></figure>
+        <figure><img src="media/img/carrying-tables.jpg" alt="Officers carrying tables"><figcaption>Officers setting up</figcaption></figure>
+        <figure class="wide"><img src="media/img/loading-truck.jpg" alt="Loading books into a truck"><figcaption>Loading the books</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="slides" aria-hidden="true">
+      <img src="media/img/classroom.jpg" alt="">
+      <img src="media/img/members-indoor.jpg" alt="">
+    </div>
+    <div class="waves top"></div>
+    <div class="container">
+      <h2 class="reveal">Join the Team</h2>
+      <p class="reveal">Are you a student who loves learning and wants to give back? We're always looking for volunteers, tutors, and future officers.</p>
+      <div class="btn-stack reveal">
+        <a class="btn btn-white" data-link="signup">Volunteer Sign-Up</a>
+        <a class="btn btn-brand" data-link="instagram">Follow on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>
