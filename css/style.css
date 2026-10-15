@@ -301,3 +301,11 @@ form.contact textarea { min-height: 150px; resize: vertical; }
 
 /* Static (non-slideshow) hero photo */
 .slides img.static { opacity: 1; transform: none; }
+
+/* Book line only at the top of each page: sections below no longer need room for it */
+.band { padding-top: 80px; }
+.closing { padding-top: 90px; background: var(--navy); }
+.hero { background: var(--navy); }
+/* Icon cards (no photo) */
+.card .card-ic { width: 40px; height: 40px; color: var(--brand); margin: 26px 24px 0; }
+.card .card-ic + .body { padding-top: 12px; }

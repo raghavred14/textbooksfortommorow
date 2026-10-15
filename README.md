@@ -2,7 +2,7 @@
 
 Static website for **Textbooks for Tomorrow**, a student-run 501(c)(3) nonprofit in Frisco, Texas that donates books to underprivileged students.
 
-The layout follows [avbotz.com](https://www.avbotz.com): a fixed see-through header, a full-screen hero photo under a blue gradient, a line of books that drops in and moves along each section edge, photo cards, a video with a play button, a tinted stats band, framed photo carousels, a full-bleed closing section, and a dark footer.
+The layout follows [avbotz.com](https://www.avbotz.com): a fixed see-through header, a full-screen hero photo under a blue gradient, a line of books that drops in and moves along the bottom of each page header, photo cards, a video with a play button, a tinted stats band, framed photo carousels, a full-bleed closing section, and a dark footer.
 
 ## Pages
 
@@ -28,8 +28,8 @@ To swap a photo, drop a new file into `media/img/` and update the `src` in the p
 
 ## Scroll effects
 
-- Hero and closing backgrounds crossfade between photos with a slow zoom
-- Books drop in and then move along in a line at the edge of each photo section (built in `js/main.js`, no image files needed)
+- Each page header has its own photo; no photo is used twice across the site
+- Books drop in and then move along in a line at the bottom of each page header (built in `js/main.js`, no image files needed)
 - "Where our alumni go" logo strip scrolls in a loop (same pattern as reviveinvestments.org); logos are in `media/logos/` from Wikimedia Commons
 - Sections fade and slide in as you scroll
 - Stat numbers count up when they come into view
