@@ -313,3 +313,12 @@ form.contact textarea { min-height: 150px; resize: vertical; }
 /* Sub-headings between photo galleries */
 .sub-title { margin-top: 56px; }
 .sub-title + .gallery { margin-top: 18px; }
+
+/* Small food pop-up beside the Richwoods drive photos */
+.media-wrap { position: relative; margin-bottom: 40px; }
+.food-pop { position: absolute; right: -14px; bottom: -40px; width: 240px; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 12px 34px rgba(0,0,0,.3); z-index: 3; }
+.food-fader { position: relative; height: 135px; overflow: hidden; }
+.food-fader .dots { bottom: 6px; }
+.food-pop .cap { padding: 10px 14px 12px; font-size: 13px; line-height: 1.4; color: var(--gray); }
+.food-pop .cap strong { display: block; color: var(--navy); font-size: 14px; }
+@media (max-width: 900px) { .food-pop { position: relative; right: auto; bottom: auto; width: 100%; margin-top: 14px; } .media-wrap { margin-bottom: 0; } }
