@@ -309,3 +309,7 @@ form.contact textarea { min-height: 150px; resize: vertical; }
 /* Icon cards (no photo) */
 .card .card-ic { width: 40px; height: 40px; color: var(--brand); margin: 26px 24px 0; }
 .card .card-ic + .body { padding-top: 12px; }
+
+/* Sub-headings between photo galleries */
+.sub-title { margin-top: 56px; }
+.sub-title + .gallery { margin-top: 18px; }
