@@ -374,3 +374,32 @@ form.contact textarea { min-height: 150px; resize: vertical; }
   .bill-paper { margin: 6px 12px 12px 0; }
   .bill-wrap { padding: 12px 12px 14px 4px; }
 }
+
+/* What We Do: no dead space — compact cards, SB 203 card fills the column height */
+.wwd { align-items: stretch; gap: 28px; margin-top: 20px; }
+.wwd-cards { gap: 16px; }
+.wwd-cards .card img { height: 128px; }
+.wwd-cards .card .body { padding: 16px 18px 18px; }
+.wwd-cards .card h3 { font-size: 18px; margin-bottom: 6px; }
+.wwd-cards .card p { font-size: 13.5px; line-height: 1.55; }
+.wwd-cards .card .more { font-size: 15px; margin-top: 10px; }
+.bill-wrap { align-self: stretch; padding: 14px 10px 12px 4px; }
+.bill-card { display: flex; flex-direction: column; justify-content: center; padding: 38px 28px 28px; }
+.bill-row { flex-direction: column; text-align: center; gap: 30px; }
+.bill-paper { width: 170px; margin: 0 auto; }
+.bill-paper strong { font-size: 36px; }
+.bill-paper small { font-size: 9.5px; }
+.bill-paper em { font-size: 11px; }
+.bill-title { font-size: 30px; }
+.bill-sub { font-size: 15px; }
+.bill-text ul { max-width: 330px; margin-left: auto; margin-right: auto; text-align: left; font-size: 13.5px; }
+.bill-btn { margin-top: 20px; }
+@media (max-width: 1100px) { .wwd { gap: 30px; } .bill-wrap { align-self: auto; } }
+@media (max-width: 640px) { .wwd-cards .card img { height: 160px; } .bill-paper { margin: 0 auto 10px; } }
+.section { padding: 60px 0; }
+@media (min-width: 641px) and (max-width: 1100px) {
+  .bill-row { flex-direction: row; text-align: left; gap: 40px; justify-content: center; }
+  .bill-text { max-width: 420px; }
+  .bill-text ul { margin-left: 0; margin-right: 0; }
+  .bill-paper { margin: 0 12px 0 0; }
+}
