@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/style.css?v=16">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
 </head>
 <body data-page="home">
@@ -31,33 +31,55 @@
     <div class="shelf bottom"></div>
   </section>
 
-  <!-- THREE CARDS -->
-  <div class="container cards stagger">
-    <a class="card" href="outreach.html">
-      <img src="media/img/ir-house-door.jpg" alt="Volunteers walking up to a house to collect books" style="object-position:50% 55%">
-      <div class="body">
-        <h2>Book Drives 📚</h2>
-        <p>Our volunteers go door to door collecting textbooks, review books, and fiction for students who need them. We've collected more than 12,000 books so far.</p>
-        <span class="more">Learn More <span>→</span></span>
+  <!-- WHAT WE DO (right under the banner) -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h-xl reveal">What We Do</h2>
+      <div class="wwd">
+        <div class="wwd-cards stagger">
+          <a class="card" href="outreach.html">
+            <img src="media/img/ir-house-door.jpg" alt="Volunteers walking up to a house to collect books" style="object-position:50% 55%">
+            <div class="body"><h3>Book Drives</h3><p>Door-to-door drives where teams of volunteers collect textbooks, review books, and fiction, then sort and ship them to students who need them.</p><span class="more">See our drives <span>→</span></span></div>
+          </a>
+          <a class="card" data-link="bookList">
+            <img src="media/img/ir-trunk-pile.jpg" alt="A trunk piled high with donated books" style="object-position:50% 50%">
+            <div class="body"><h3>Our Book List</h3><p>Browse every title we have available, from AP review guides and SAT prep to elementary readers and adult fiction.</p><span class="more">View the list <span>→</span></span></div>
+          </a>
+          <a class="card" href="outreach.html">
+            <img src="media/img/volleyball.jpg" alt="Volunteers playing volleyball at a charity event" style="object-position:50% 70%">
+            <div class="body"><h3>Fundraising Events</h3><p>Sports events and charity tournaments in volleyball, basketball, and pickleball. Entry fees go straight to buying and shipping books.</p><span class="more">See events <span>→</span></span></div>
+          </a>
+          <a class="card" href="team.html">
+            <img src="media/img/ir-girls-group.jpg" alt="High school volunteers at a book drive" style="object-position:50% 35%">
+            <div class="body"><h3>Community Engagement</h3><p>High schoolers working as a team, earning service hours, and leading drives in their own neighborhoods.</p><span class="more">Meet the team <span>→</span></span></div>
+          </a>
+        </div>
+
+        <!-- SB 203 pop-up card (same pattern as the Marginal Gains card on reviveinvestments.org) -->
+        <div class="bill-wrap reveal zoom">
+          <a class="bill-card" href="https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&amp;Bill=SB203" target="_blank" rel="noopener">
+            <span class="bill-tag">Political &amp; Educational Involvement</span>
+            <div class="bill-row">
+              <div class="bill-paper" aria-hidden="true">
+                <div class="sheet"><small>Texas Senate Bill</small><strong>SB 203</strong><em>89th Legislature</em><i></i><i></i><i></i></div>
+              </div>
+              <div class="bill-text">
+                <p class="bill-kicker">Texas Legislature</p>
+                <p class="bill-title">Texas SB 203</p>
+                <p class="bill-sub">Relating to the disclosure of a public school student's numerical class rank.</p>
+                <ul>
+                  <li><span aria-hidden="true">✓</span>Authored by Sen. Menéndez</li>
+                  <li><span aria-hidden="true">✓</span>Reported favorably by the Senate Education K-16 committee, 8–3</li>
+                  <li><span aria-hidden="true">✓</span>Part of our work for education beyond our drives</li>
+                </ul>
+                <span class="bill-btn">Read the bill <span aria-hidden="true">↗</span></span>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
-    </a>
-    <a class="card" data-link="bookList">
-      <img src="media/img/ir-trunk-pile.jpg" alt="A trunk piled high with donated books" style="object-position:50% 50%">
-      <div class="body">
-        <h2>Our Book List</h2>
-        <p>Browse every title we have available, from AP review guides and SAT prep to elementary readers and adult fiction.</p>
-        <span class="more">View the List <span>→</span></span>
-      </div>
-    </a>
-    <a class="card" href="donate.html">
-      <img src="media/img/ir-bag-handoff.jpg" alt="Volunteers handing over a bag of donated books" style="object-position:50% 40%">
-      <div class="body">
-        <h2>Give Now</h2>
-        <p>We're student-run and rely on our community. Donate your gently used books, or give directly to help cover shipping.</p>
-        <span class="more">Learn More <span>→</span></span>
-      </div>
-    </a>
-  </div>
+    </div>
+  </section>
 
   <hr class="rule">
 
@@ -86,7 +108,7 @@
         <div class="media-frame tall fader">
           <img src="media/img/ir-guys-crate.jpg" alt="Two volunteers carrying a crate of books" style="object-position:50% 35%">
           <img src="media/img/ir-team-b.jpg" alt="Three volunteers smiling at the drive" style="object-position:50% 35%">
-          <img src="media/img/ir-team-d.jpg" alt="Volunteers gathered after the drive" style="object-position:50% 40%">
+          <img src="media/img/ir-truck-loading2.jpg" alt="Volunteers loading boxes of donated books" style="object-position:55% 40%">
           <img src="media/img/ir-girls-boxes.jpg" alt="Volunteers with boxes of donated books" style="object-position:40% 40%">
         </div>
       </div>
@@ -161,31 +183,6 @@
     </div>
   </section>
 
-  <!-- WHAT WE DO -->
-  <section class="section">
-    <div class="container">
-      <h2 class="h-xl reveal">What We Do</h2>
-      <div class="cards four stagger">
-        <div class="card">
-          <img src="media/img/ir-truck-loading2.jpg" alt="Volunteers loading boxes of donated books" style="object-position:55% 40%">
-          <div class="body"><h3>Book Drives</h3><p>Door-to-door drives where teams of volunteers collect textbooks, review books, and fiction, then sort and ship them to students who need them.</p></div>
-        </div>
-        <div class="card">
-          <img src="media/img/basketball-team.jpg" alt="Players at our charity basketball tournament" style="object-position:50% 40%">
-          <div class="body"><h3>Fundraising Events</h3><p>Sports events and charity tournaments in volleyball, basketball, and pickleball. Entry fees go straight to buying and shipping books.</p></div>
-        </div>
-        <div class="card">
-          <img src="media/img/ir-girls-group.jpg" alt="High school volunteers at a book drive" style="object-position:50% 35%">
-          <div class="body"><h3>Community Engagement</h3><p>High schoolers working as a team, earning service hours, and leading drives in their own neighborhoods.</p></div>
-        </div>
-        <div class="card">
-          <img src="media/img/graphic-sb203.svg" style="object-fit:contain;background:linear-gradient(135deg,#6e7cff,#1b2a6b)" alt="Graphic of Texas Senate Bill 203, relating to the disclosure of a public school student's numerical class rank">
-          <div class="body"><h3>Political &amp; Educational Involvement</h3><p>Pushing for access to education beyond our drives, including our work on Texas SB 203, a bill about public school students' access to their numerical class rank.</p><a class="more" href="https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&amp;Bill=SB203" target="_blank" rel="noopener">Read SB 203 <span>→</span></a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CLOSING -->
   <section class="closing">
     <div class="container">
@@ -199,6 +196,6 @@
     </div>
   </section>
 
-  <script src="js/main.js?v=13"></script>
+  <script src="js/main.js?v=16"></script>
 </body>
 </html>
